@@ -19,11 +19,14 @@ const URI = process.env.MongoDBURI;
 
 
 // connect to mongo
-try {
-  mongoose.connect(URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
+// try {
+//   mongoose.connect(URI, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//   });
+
+  try {
+  mongoose.connect(URI);
   console.log("connected to mongo");
 } 
 
